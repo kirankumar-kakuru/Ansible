@@ -1,5 +1,6 @@
 - name: Print Hello world
   hosts: local
+  connection: local
   become: yes
   tasks:
   - name: 
