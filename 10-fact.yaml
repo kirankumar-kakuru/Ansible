@@ -1,0 +1,10 @@
+---
+- name: Gather and print facts
+  hosts: local
+  connection: local
+  gather_facts: yes
+
+  tasks:
+    - name: Print all Ansible facts
+      debug:
+        var: ansible_facts
