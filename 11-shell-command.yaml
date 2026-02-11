@@ -9,7 +9,7 @@
 
   - name: print output
     ansible.builtin.debug:
-    msg: "{{ users_output }}"
+      msg: "{{ users_output }}"
 
   - name: command modul test
     ansible.builtin.shell: ls -lrt > files.txt
@@ -17,4 +17,4 @@
 
   - name: print output
     ansible.debug.builtin:
-    msg: "{{ files_output }}"
+      msg: "{{ files_output }}"
